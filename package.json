@@ -1,0 +1,39 @@
+{
+  "name": "licensecheck",
+  "version": "1.0.0",
+  "description": "Scan npm dependencies for license compliance — detect GPL contamination, missing licenses, and policy violations",
+  "main": "dist/index.js",
+  "bin": {
+    "licensecheck": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/**/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "license",
+    "compliance",
+    "audit",
+    "npm",
+    "dependencies",
+    "GPL",
+    "legal"
+  ],
+  "author": "sulthonzh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sulthonzh/licensecheck"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3"
+  }
+}
