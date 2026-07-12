@@ -30,9 +30,14 @@
     "node": ">=18"
   },
   "files": [
-    "dist"
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "!dist/**/*.test.*",
+    "README.md",
+    "LICENSE"
   ],
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "@types/node": "^25.9.1",
     "typescript": "^6.0.3"
   }
